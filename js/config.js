@@ -14,6 +14,20 @@ window.JNJ_CONFIG = {
   // 소식 게시판 분류
   newsCategories: ['미자립교회', '선교', '자립청년', '행사'],
 
+  // 메인페이지 후원자 명단 — 이름은 가운데 글자를 *로 가려서 입력하세요.
+  // type: '정기' 또는 '일시'
+  donors: [
+    { name: '이*진', type: '정기' },
+    { name: '심*경', type: '정기' },
+    { name: '문*희', type: '정기' },
+    { name: '조*일', type: '정기' },
+    { name: '변*진', type: '정기' },
+    { name: '김*민', type: '정기' },
+    { name: '신*열', type: '정기' },
+    { name: '권*혁', type: '정기' },
+    { name: '백*미', type: '정기' },
+  ],
+
   // 데모 모드 전용 관리자 비밀번호 (Supabase 연결 후에는 사용되지 않습니다)
   demoPassword: 'jnj1234',
 

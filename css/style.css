@@ -795,3 +795,22 @@ main section[id]{ scroll-margin-top:160px; }
 .page-tabs::before{ content:""; position:absolute; left:0; right:0; bottom:100%; height:88px; background:#fff; opacity:0; pointer-events:none; transition:opacity var(--dur-base); }
 .page-tabs.is-stuck::before{ opacity:1; }
 @media (max-width:767px){ .page-tabs::before{ height:72px; } }
+
+/* ---------- Home: 후원자 명단 ---------- */
+.donors{ padding:120px 0; overflow:hidden; }
+.donors__head{ text-align:center; margin-bottom:48px; }
+.donors__head .sec-title{ margin-top:12px; }
+.donors__head .sec-desc{ margin:20px auto 0; }
+.donors__count{ display:inline-flex; margin-top:24px; padding:8px 18px; border-radius:var(--radius-full); background:var(--blue-50); font-size:15px; color:var(--blue-700); }
+.donors__count b{ margin:0 2px; font-family:var(--font-display); font-weight:800; }
+.marquee{ overflow:hidden; -webkit-mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee__track{ display:flex; width:max-content; animation:marquee var(--dur, 40s) linear infinite; }
+.marquee:hover .marquee__track{ animation-play-state:paused; }
+@keyframes marquee{ to{ transform:translateX(-50%); } }
+.marquee__group{ display:flex; gap:16px; padding-right:16px; }
+.donor-chip{ display:inline-flex; align-items:center; gap:10px; height:64px; padding:0 28px; border-radius:var(--radius-full); background:#fff; border:1px solid var(--border-default); box-shadow:var(--shadow-sm); font-size:17px; color:var(--text-default); white-space:nowrap; }
+.donor-chip svg{ width:20px; height:20px; color:var(--warm-500); }
+.donor-chip b{ font-size:19px; font-weight:700; color:var(--text-strong); letter-spacing:0.02em; }
+.donor-chip i{ font-style:normal; margin-left:4px; padding:4px 10px; border-radius:var(--radius-full); background:var(--blue-50); color:var(--blue-700); font-size:13px; font-weight:600; }
+@media (max-width:767px){ .donors{ padding:80px 0; } .donor-chip{ height:56px; padding:0 20px; font-size:15px; } .donor-chip b{ font-size:17px; } }
+@media (prefers-reduced-motion: reduce){ .marquee__track{ animation:none; flex-wrap:wrap; width:auto; justify-content:center; } .marquee__group + .marquee__group{ display:none; } .marquee{ -webkit-mask-image:none; mask-image:none; } }
