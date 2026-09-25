@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>소식 | 제이앤제이(J&amp;J)</title>
+  <meta name="description" content="제이앤제이의 미자립교회·선교·자립청년 사역 현장 소식을 전합니다." />
+  <meta name="theme-color" content="#0A1F4A" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="news" data-board="news">
+  <main id="main">
+    <section class="sub-visual">
+      <div class="sub-visual__bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=2000&q=75&auto=format&fit=crop" alt="" /></div>
+      <div class="sub-visual__inner">
+        <span class="overline hero__fade">News</span>
+        <h1><span class="line"><span>소식</span></span></h1>
+        <ol class="breadcrumb hero__fade"><li><a href="index.html">홈</a></li><li>소식</li></ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="list-view">
+          <div class="board-top">
+            <div class="filter" id="filter" aria-label="분류"></div>
+            <form class="search" id="search-form" role="search">
+              <label class="sr-only" for="q">소식 검색</label>
+              <input type="search" id="q" name="q" placeholder="검색어를 입력하세요" />
+              <button type="submit" class="btn btn--primary"><svg aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">검색</span></button>
+            </form>
+          </div>
+          <p class="board-count" id="board-count" style="margin-bottom:16px">&nbsp;</p>
+          <div class="news-grid" id="board-list"><div class="skeleton" style="aspect-ratio:16/10"></div><div class="skeleton" style="aspect-ratio:16/10"></div><div class="skeleton" style="aspect-ratio:16/10"></div></div>
+          <nav class="pagination" id="pagination" aria-label="페이지"></nav>
+        </div>
+        <div id="detail-view" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/board.js"></script>
+</body>
+</html>
