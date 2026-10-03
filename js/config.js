@@ -12,7 +12,7 @@ window.JNJ_CONFIG = {
   supabaseAnonKey: '',
 
   // 소식 게시판 분류
-  newsCategories: ['미자립교회', '선교', '자립청년', '행사'],
+  newsCategories: ['미자립교회', '선교', '탈북민', '자립청년', '행사'],
 
   // 메인페이지 후원자 명단 — 이름은 가운데 글자를 *로 가려서 입력하세요.
   // type: '정기' 또는 '일시'

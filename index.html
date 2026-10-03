@@ -12,121 +12,79 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Nanum+Pen+Script&display=swap" />
   <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body data-page="home">
   <main id="main">
     <!-- ============ Hero ============ -->
-    <section class="hero" aria-roledescription="carousel" aria-label="메인 비주얼">
-      <div class="swiper hero-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="hero__bg"><img src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=2000&q=80&auto=format&fit=crop" alt="" /></div>
-            <div class="hero__content"><div class="container"><div class="hero__copy">
-              <span class="overline hero__fade">미자립교회 지원</span>
-              <h1 class="hero__title"><span class="line"><span>작은 교회의 불빛이</span></span><span class="line"><span>꺼지지 않도록</span></span></h1>
-              <p class="hero__desc hero__fade">성도 몇 명의 시골 교회, 개척의 길을 걷는 도시 교회. 그 자리를 지키는 목회자 가정 곁에 제이앤제이가 함께합니다.</p>
-              <div class="hero__btns hero__fade">
-                <a href="donate.html" class="btn btn--donate btn--l" data-donate><svg class="i-heart" aria-hidden="true"><use href="#i-heart"/></svg>후원 참여하기</a>
-                <a href="about.html#ministry" class="btn btn--inverse-ghost btn--l">사역 알아보기<svg class="i-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-              </div>
-            </div></div></div>
+    <section class="hero hero--single" aria-label="메인 비주얼">
+      <div class="hero__slide is-kb">
+        <div class="hero__bg"><img src="https://images.unsplash.com/photo-1743611847941-79f1b9bd5626?w=2400&q=80&auto=format&fit=crop" alt="노을 진 바다 앞에 나란히 앉은 청년들" /></div>
+        <div class="hero__content"><div class="container"><div class="hero__copy">
+          <span class="overline hero__fade">Journey &amp; Joining</span>
+          <h1 class="hero__title"><span class="line"><span>함께 걷고, 연결하고,</span></span><span class="line"><span>함께 세워갑니다.</span></span></h1>
+          <p class="hero__desc hero__fade">자립준비청년과 이주민 다음 세대의 삶에 동행하며<br />사람과 사람, 교회와 선교현장을 연결합니다.<br />한 번의 지원보다 계속되는 관계를<br />프로그램보다 한 사람을 소중히 여깁니다.</p>
+          <div class="hero__btns hero__fade">
+            <a href="about.html" class="btn btn--donate btn--l">J&amp;J 소개<svg class="i-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            <a href="donate.html" class="btn btn--inverse-ghost btn--l">함께하기</a>
           </div>
-          <div class="swiper-slide">
-            <div class="hero__bg"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=2000&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-            <div class="hero__content"><div class="container"><div class="hero__copy">
-              <span class="overline hero__fade">국내외 선교 후원</span>
-              <h2 class="hero__title"><span class="line"><span>땅끝에서 복음을 전하는</span></span><span class="line"><span>이들의 든든한 뒷모습</span></span></h2>
-              <p class="hero__desc hero__fade">낯선 땅에서, 또 우리 곁의 이웃에게 복음을 전하는 선교사와 선교단체를 기도와 후원으로 세워갑니다.</p>
-              <div class="hero__btns hero__fade">
-                <a href="donate.html" class="btn btn--donate btn--l" data-donate><svg class="i-heart" aria-hidden="true"><use href="#i-heart"/></svg>후원 참여하기</a>
-                <a href="about.html#ministry" class="btn btn--inverse-ghost btn--l">사역 알아보기<svg class="i-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-              </div>
-            </div></div></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="hero__bg"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=2000&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-            <div class="hero__content"><div class="container"><div class="hero__copy">
-              <span class="overline hero__fade">탈북민 후원</span>
-              <h2 class="hero__title"><span class="line"><span>자유를 찾아 온 이웃이</span></span><span class="line"><span>외롭지 않도록</span></span></h2>
-              <p class="hero__desc hero__fade">낯선 땅에서 새 삶을 시작한 탈북민 가정이 믿음의 공동체 안에서 뿌리내릴 수 있도록 정착과 자녀 교육을 함께 돕습니다.</p>
-              <div class="hero__btns hero__fade">
-                <a href="donate.html" class="btn btn--donate btn--l" data-donate><svg class="i-heart" aria-hidden="true"><use href="#i-heart"/></svg>후원 참여하기</a>
-                <a href="about.html#ministry" class="btn btn--inverse-ghost btn--l">사역 알아보기<svg class="i-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-              </div>
-            </div></div></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="hero__bg"><img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?w=2000&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-            <div class="hero__content"><div class="container"><div class="hero__copy">
-              <span class="overline hero__fade">자립청년 지원</span>
-              <h2 class="hero__title"><span class="line"><span>홀로 서는 청년에게</span></span><span class="line"><span>기댈 어깨가 되어</span></span></h2>
-              <p class="hero__desc hero__fade">보호가 끝난 뒤 세상에 첫발을 내딛는 청년들이 믿음 안에서 단단히 설 수 있도록 주거·학업·멘토링을 지원합니다.</p>
-              <div class="hero__btns hero__fade">
-                <a href="donate.html" class="btn btn--donate btn--l" data-donate><svg class="i-heart" aria-hidden="true"><use href="#i-heart"/></svg>후원 참여하기</a>
-                <a href="about.html#ministry" class="btn btn--inverse-ghost btn--l">사역 알아보기<svg class="i-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-              </div>
-            </div></div></div>
-          </div>
-        </div>
+        </div></div></div>
       </div>
-      <div class="hero__ctrl"><div class="container"><div class="hero__ctrl-inner">
-        <span class="hero__count" aria-live="polite"><span class="cur">01</span> <span class="total">/ 04</span></span>
-        <span class="hero__progress" aria-hidden="true"><span></span></span>
-        <div class="hero__btn-group">
-          <button type="button" class="hero__nav hero__prev" aria-label="이전 슬라이드"><svg aria-hidden="true"><use href="#i-chev-left"/></svg></button>
-          <button type="button" class="hero__nav hero__toggle" aria-label="자동 재생 일시정지"><svg aria-hidden="true"><use href="#i-pause"/></svg></button>
-          <button type="button" class="hero__nav hero__next" aria-label="다음 슬라이드"><svg aria-hidden="true"><use href="#i-chev-right"/></svg></button>
-        </div>
-      </div></div></div>
+      <!-- 오른쪽 손글씨 문구 -->
+      <p class="hero__script" aria-label="한 사람의 오늘이 또 다른 누군가의 내일이 되도록">
+        <span class="hero__script-line" aria-hidden="true">한 사람의</span>
+        <span class="hero__script-line" aria-hidden="true">오늘이</span>
+        <span class="hero__script-line" aria-hidden="true">또 다른 누군가의</span>
+        <span class="hero__script-line" aria-hidden="true">내일이 되도록</span>
+        <svg class="hero__script-stroke" viewBox="0 0 200 60" aria-hidden="true"><path d="M4 54 C 60 30, 120 14, 196 4" /></svg>
+      </p>
       <div class="hero__scroll" aria-hidden="true">SCROLL<i></i></div>
     </section>
 
-    <!-- ============ 3대 사역 ============ -->
+    <!-- ============ 4대 사역 ============ -->
     <section class="ministry" aria-label="제이앤제이 4대 사역">
       <div class="container">
         <div class="ministry__grid" data-anim="stagger">
           <a href="about.html#ministry" class="m-card">
-            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1515162305285-0293e4767cc2?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
+            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1699730148132-1409a3728479?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
+            <div class="m-card__body">
+              <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-footprints"/></svg></span>
+              <span class="m-card__label">Youth</span>
+              <h2 class="m-card__title">자립준비청년 동행</h2>
+              <p class="m-card__desc">혼자 서야 하는 순간,<br />함께 걷습니다.</p>
+              <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a href="about.html#ministry" class="m-card">
+            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1614113036347-9f60df80730a?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
+            <div class="m-card__body">
+              <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-backpack"/></svg></span>
+              <span class="m-card__label">Next Generation</span>
+              <h2 class="m-card__title">고려인 · 이주민 다음세대</h2>
+              <p class="m-card__desc">아이들의 이름을 기억하고,<br />다시 찾아갑니다.</p>
+              <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a href="about.html#ministry" class="m-card">
+            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
+            <div class="m-card__body">
+              <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-hand-heart"/></svg></span>
+              <span class="m-card__label">Community</span>
+              <h2 class="m-card__title">탈북민 · 다문화 공동체</h2>
+              <p class="m-card__desc">도움받던 사람이<br />다시 누군가를 섬기도록.</p>
+              <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </a>
+          <a href="about.html#ministry" class="m-card">
+            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1653133672754-82025e7e9074?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
             <div class="m-card__body">
               <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-church"/></svg></span>
-              <span class="m-card__label">Church</span>
-              <h2 class="m-card__title">미자립교회 지원</h2>
-              <p class="m-card__desc">농어촌·도시 미자립교회에 사역비와 목회자 가정 생활을 지원하고, 쉼과 회복의 자리를 마련합니다.</p>
-              <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
-            </div>
-          </a>
-          <a href="about.html#ministry" class="m-card">
-            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-            <div class="m-card__body">
-              <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-globe"/></svg></span>
-              <span class="m-card__label">Mission</span>
-              <h2 class="m-card__title">국내외 선교 후원</h2>
-              <p class="m-card__desc">해외 선교지의 선교사 가정과 국내 이주민·다음세대를 섬기는 선교단체의 사역을 정기적으로 후원합니다.</p>
-              <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
-            </div>
-          </a>
-          <a href="about.html#ministry" class="m-card">
-            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-            <div class="m-card__body">
-              <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-house-heart"/></svg></span>
-              <span class="m-card__label">Neighbor</span>
-              <h2 class="m-card__title">탈북민 후원</h2>
-              <p class="m-card__desc">이 땅에서 새 삶을 시작한 탈북민 가정의 정착과 자녀 교육을 돕고, 신앙 공동체와 연결합니다.</p>
-              <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
-            </div>
-          </a>
-          <a href="about.html#ministry" class="m-card">
-            <div class="m-card__thumb"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-            <div class="m-card__body">
-              <span class="m-card__icon" aria-hidden="true"><svg><use href="#i-sprout"/></svg></span>
-              <span class="m-card__label">Youth</span>
-              <h2 class="m-card__title">자립청년 지원</h2>
-              <p class="m-card__desc">보호 종료 후 홀로서기를 시작한 청년들에게 주거·장학·멘토링을 지원하며 자립의 여정을 함께 걷습니다.</p>
+              <span class="m-card__label">Church &amp; Mission</span>
+              <h2 class="m-card__title">교회 · 선교현장 동역</h2>
+              <p class="m-card__desc">필요한 곳을 찾아가<br />함께 세웁니다.</p>
               <span class="m-card__more link-arrow">자세히 보기<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
             </div>
           </a>
@@ -234,7 +192,7 @@
               “잊히지 않았다는 것,<br />그것만으로도 다시 일어설<br />힘이 되었습니다.”
             </blockquote>
           </div>
-          <p class="story__text" data-anim="fade-up">강원도 산골에서 성도 열두 명과 함께 예배드리는 이○○ 목사님은 7년째 제이앤제이의 후원을 받고 있습니다. 올해 교회는 마을 어르신들을 위한 작은 식탁 공동체를 시작했습니다.</p>
+          <p class="story__text" data-anim="fade-up">강원도 산골에서 성도 열두 명과 함께 예배드리는 이○○ 목사님은 제이앤제이와 함께 사역을 이어가고 있습니다. 올해 교회는 마을 어르신들을 위한 작은 식탁 공동체를 시작했습니다.</p>
           <p class="story__who" data-anim="fade-up">강원 ○○교회 이○○ 목사님의 편지 중에서</p>
           <div class="story__btns" data-anim="fade-up">
             <a href="news.html" class="btn btn--inverse btn--l">현장 소식 더 보기<svg class="i-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
@@ -291,7 +249,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/home.js"></script>
 </body>

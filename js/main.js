@@ -157,6 +157,13 @@
     });
   }
 
+  /* ---------- Hero (한 장) ---------- */
+  const single = document.querySelector('.hero--single');
+  if (single) {
+    setTimeout(() => single.querySelector('.hero__copy')?.classList.add('is-revealed'), reduce ? 0 : 200);
+    setTimeout(() => single.querySelector('.hero__script')?.classList.add('is-written'), reduce ? 0 : 900);
+  }
+
   /* ---------- Sub visual 타이틀 리빌 ---------- */
   const sv = document.querySelector('.sub-visual__inner');
   if (sv) setTimeout(() => sv.classList.add('is-revealed'), reduce ? 0 : 150);
