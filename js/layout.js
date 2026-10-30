@@ -9,10 +9,11 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   const NAV = [
-    { key: 'about', label: '소개', href: 'about.html' },
-    { key: 'donate', label: '후원하기', href: 'donate.html' },
-    { key: 'news', label: '소식', href: 'news.html' },
-    { key: 'notice', label: '공지사항', href: 'notice.html' },
+    { key: 'about', label: 'J&J 소개', href: 'about.html' },
+    { key: 'talent', label: '재능동행', href: 'talent.html' },
+    { key: 'internship', label: '선교 인턴십', href: 'internship.html' },
+    { key: 'news', label: '동행의 기록', href: 'news.html' },
+    { key: 'donate', label: '함께하기', href: 'donate.html' },
   ];
 
   const icons = `
@@ -98,6 +99,7 @@
         ${logo()}
         <nav class="footer__links" aria-label="하단 메뉴">
           ${NAV.map((n) => `<a href="${n.href}">${n.label}</a>`).join('')}
+          <a href="notice.html">공지사항</a>
           <a href="#" class="strong">개인정보처리방침</a>
           <a href="#">이메일무단수집거부</a>
         </nav>
@@ -134,7 +136,7 @@
   </div>
   <nav class="m-donate-bar" id="m-donate-bar" aria-label="빠른 후원">
     <a href="donate.html" data-donate><svg aria-hidden="true"><use href="#i-heart"/></svg>후원 참여하기</a>
-    <a href="donate.html">후원 안내</a>
+    <a href="donate.html">함께하기</a>
   </nav>`;
 
   document.body.insertAdjacentHTML('afterbegin', icons + header);
