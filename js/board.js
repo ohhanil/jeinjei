@@ -9,7 +9,7 @@
   const isNews = type === 'news';
   const PER_PAGE = isNews ? 9 : 10;
   const base = `${type}.html`;
-  const label = isNews ? '동행의 기록' : '공지사항';
+  const label = isNews ? '소식' : '공지사항';
 
   const listView = document.getElementById('list-view');
   const detailView = document.getElementById('detail-view');

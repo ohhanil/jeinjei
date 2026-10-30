@@ -987,3 +987,13 @@ main section[id]{ scroll-margin-top:160px; }
   .ministry2__lead{ font-size:1.125rem; }
   #ministry .sec-desc br{ display:none; }
 }
+
+/* 상단 메뉴 6개 — 줄바꿈 없이, 좁은 PC에서는 간격·크기 축소 */
+.gnb__link{ white-space:nowrap; }
+@media (max-width:1280px){ .gnb__list{ gap:2px; } .gnb__link{ padding:0 14px; font-size:17px; } }
+@media (max-width:1180px){ .gnb__link{ padding:0 10px; font-size:16px; } .header__donate{ padding:0 18px; } }
+
+/* 메인: 내용 준비 중 섹션 */
+.home-prep__box{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:48px 40px; border-radius:var(--radius-lg); border:1.5px dashed var(--border-strong); background:#fff; color:var(--text-muted); font-size:var(--fs-body-lg); }
+.section--subtle .home-prep__box{ background:#fff; }
+@media (max-width:767px){ .home-prep__box{ padding:32px 24px; } }

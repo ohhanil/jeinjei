@@ -9,6 +9,7 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   const NAV = [
+    { key: 'home', label: '홈', href: 'index.html' },
     { key: 'about', label: 'J&J 소개', href: 'about.html' },
     { key: 'talent', label: '재능동행', href: 'talent.html' },
     { key: 'internship', label: '선교 인턴십', href: 'internship.html' },
@@ -136,7 +137,7 @@
   </div>
   <nav class="m-donate-bar" id="m-donate-bar" aria-label="빠른 후원">
     <a href="donate.html" data-donate><svg aria-hidden="true"><use href="#i-heart"/></svg>후원 참여하기</a>
-    <a href="donate.html">함께하기</a>
+    <a href="donate.html">후원 안내</a>
   </nav>`;
 
   document.body.insertAdjacentHTML('afterbegin', icons + header);
