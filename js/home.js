@@ -20,7 +20,7 @@
   track.style.setProperty('--dur', `${Math.max(40, items.length * 3.5)}s`);
 })();
 
-/* 메인페이지 — 최근 소식 3건 · 공지사항 5건 */
+/* 메인페이지 — 최근 소식 3건 · 공지 5건 (동행의 기록 '공지' 분류) */
 (async () => {
   const { store, util, appear, refreshScroll } = window.JNJ;
   const newsEl = document.getElementById('home-news');
@@ -29,7 +29,7 @@
   try {
     const [{ items: news }, { items: notices }] = await Promise.all([
       store.list('news', { page: 1, perPage: 3 }),
-      store.list('notice', { page: 1, perPage: 5 }),
+      store.list('news', { page: 1, perPage: 5, category: '공지' }),
     ]);
 
     newsEl.innerHTML = news.length ? news.map((n) => `
@@ -43,8 +43,8 @@
       </a>`).join('') : '<p class="empty">등록된 소식이 없습니다.</p>';
 
     noticeEl.innerHTML = notices.length ? notices.map((t) => `
-      <a href="notice.html?id=${encodeURIComponent(t.id)}">
-        <span class="t">${t.pinned ? '<span class="pin-badge">공지</span>' : ''}<span>${util.esc(t.title)}</span>${util.isNew(t.date) ? '<i class="new-badge" aria-label="새 글">N</i>' : ''}</span>
+      <a href="news.html?id=${encodeURIComponent(t.id)}">
+        <span class="t"><span>${util.esc(t.title)}</span>${util.isNew(t.date) ? '<i class="new-badge" aria-label="새 글">N</i>' : ''}</span>
         <span class="d">${util.fmtDate(t.date)}</span>
       </a>`).join('') : '<p class="empty">등록된 공지사항이 없습니다.</p>';
   } catch (e) {

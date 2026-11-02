@@ -100,7 +100,6 @@
         ${logo()}
         <nav class="footer__links" aria-label="하단 메뉴">
           ${NAV.map((n) => `<a href="${n.href}">${n.label}</a>`).join('')}
-          <a href="notice.html">공지사항</a>
           <a href="#" class="strong">개인정보처리방침</a>
           <a href="#">이메일무단수집거부</a>
         </nav>
@@ -122,7 +121,7 @@
         <div class="account">
           <h3>후원 계좌 안내</h3>
           <ul>${(org.accounts || []).map((a) => `<li><span>${esc(a.bank)}</span><b>${esc(a.number)}</b></li>`).join('')}</ul>
-          <small>예금주: ${esc(org.accountHolder)} · 입금 후 사무국으로 연락 주시면 확인해 드립니다.</small>
+          <small>예금주: ${esc(org.accountHolder)} · 입금 후 대표 전화로 연락 주시면 확인해 드립니다.</small>
         </div>
       </div>
       <div class="footer__bottom">
@@ -141,6 +140,18 @@
   </nav>`;
 
   document.body.insertAdjacentHTML('afterbegin', icons + header);
+
+  // 상단바 메뉴 이름 = 페이지 상단 제목 · 경로 표시 · 브라우저 탭 제목 (항상 동일하게)
+  const current = NAV.find((n) => n.key === page && n.key !== 'home');
+  window.JNJ = window.JNJ || {};
+  window.JNJ.pageName = current ? current.label : '';
+  if (current) {
+    const h1 = document.querySelector('.sub-visual h1 .line > span') || document.querySelector('.sub-visual h1');
+    if (h1) h1.textContent = current.label;
+    const crumb = document.querySelector('.sub-visual .breadcrumb li:last-child');
+    if (crumb) crumb.textContent = current.label;
+    document.title = `${current.label} | 제이앤제이(J&J)`;
+  }
   document.body.insertAdjacentHTML('beforeend', footer);
 
   // 후원 버튼 → 외부 후원 페이지 (config.donateUrl)

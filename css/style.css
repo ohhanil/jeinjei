@@ -997,3 +997,5 @@ main section[id]{ scroll-margin-top:160px; }
 .home-prep__box{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:48px 40px; border-radius:var(--radius-lg); border:1.5px dashed var(--border-strong); background:#fff; color:var(--text-muted); font-size:var(--fs-body-lg); }
 .section--subtle .home-prep__box{ background:#fff; }
 @media (max-width:767px){ .home-prep__box{ padding:32px 24px; } }
+.about-intro__chair{ margin-top:32px; display:flex; align-items:baseline; gap:12px; font-size:16px; color:var(--text-muted); }
+.about-intro__chair strong{ font-size:22px; font-weight:700; color:var(--text-strong); letter-spacing:0.04em; }

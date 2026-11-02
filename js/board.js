@@ -93,7 +93,7 @@
         detailView.innerHTML = `<div class="empty"><strong>게시물을 찾을 수 없습니다</strong>삭제되었거나 주소가 잘못되었습니다.<div style="margin-top:32px"><a href="${base}" class="btn btn--ghost">목록으로</a></div></div>`;
         return;
       }
-      document.title = `${item.title} | ${label} | 제이앤제이(J&J)`;
+      document.title = `${item.title} | ${window.JNJ.pageName || label} | 제이앤제이(J&J)`;
       const { newer, older } = await store.adjacent(type, id);
       const navRow = (it, txt) => it
         ? `<a href="${base}?id=${encodeURIComponent(it.id)}"><span>${txt}</span><strong>${util.esc(it.title)}</strong></a>`
